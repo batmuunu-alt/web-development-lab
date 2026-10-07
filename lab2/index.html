@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатори 02 - Бүртгэлийн форм</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Бүртгэлийн форм</h1>
+        <p>Доорх мэдээллийг үнэн зөв бөглөнө үү.</p>
+    </header>
+
+    <main>
+        <form>
+
+            <div>
+                <label for="name">Нэр:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    pattern="[А-ЯӨҮЁа-яөүёA-Za-z ]+"
+                >
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">Имэйл:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+            </div>
+
+            <br>
+
+            <div>
+                <label for="password">Нууц үг:</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    pattern=".{8,}"
+                    title="Нууц үг хамгийн багадаа 8 тэмдэгт байна."
+                >
+            </div>
+
+            <br>
+
+            <div>
+                <label for="birthdate">Төрсөн огноо:</label>
+                <input
+                    type="date"
+                    id="birthdate"
+                    name="birthdate"
+                    required
+                >
+            </div>
+
+            <br>
+
+            <fieldset>
+                <legend>Хүйс:</legend>
+
+                <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="male"
+                    required
+                >
+                <label for="male">Эрэгтэй</label>
+
+                <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="female"
+                >
+                <label for="female">Эмэгтэй</label>
+
+                <input
+                    type="radio"
+                    id="other"
+                    name="gender"
+                    value="other"
+                >
+                <label for="other">Бусад</label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Сонирхол:</legend>
+
+                <input
+                    type="checkbox"
+                    id="coding"
+                    name="interest"
+                    value="coding"
+                >
+                <label for="coding">Програмчлал</label>
+
+                <input
+                    type="checkbox"
+                    id="music"
+                    name="interest"
+                    value="music"
+                >
+                <label for="music">Хөгжим</label>
+
+                <input
+                    type="checkbox"
+                    id="sport"
+                    name="interest"
+                    value="sport"
+                >
+                <label for="sport">Спорт</label>
+            </fieldset>
+
+            <br>
+
+            <div>
+                <label for="profession">Мэргэжил:</label>
+
+                <select
+                    id="profession"
+                    name="profession"
+                    required
+                >
+                    <option value="">-- Сонгоно уу --</option>
+                    <option value="programmer">Программист</option>
+                    <option value="designer">Дизайнер</option>
+                    <option value="teacher">Багш</option>
+                    <option value="other">Бусад</option>
+                </select>
+            </div>
+
+            <br>
+
+            <button type="submit">Бүртгүүлэх</button>
+            <button type="reset">Цэвэрлэх</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 Web Development - Laboratory 02</p>
+    </footer>
+
+</body>
+
+</html>

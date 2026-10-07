@@ -1,0 +1,207 @@
+/* Үндсэн тохиргоо */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f2f5f9;
+    color: #222;
+}
+
+
+/* Header */
+
+.header {
+    text-align: center;
+    padding: 40px 20px 25px;
+}
+
+.title {
+    margin: 0 0 10px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin: 0;
+    color: #666;
+}
+
+
+/* Main */
+
+.main {
+    max-width: 650px;
+    margin: 20px auto 40px;
+    padding: 0 20px;
+}
+
+
+/* Form */
+
+.form {
+    padding: 35px;
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Form талбар */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+
+    font-weight: 600;
+}
+
+
+/* Input болон Select */
+
+.form-input {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    background-color: white;
+
+    font-family: inherit;
+    font-size: 15px;
+}
+
+
+/* Input дээр дарахад */
+
+.form-input:focus {
+    outline: none;
+    border-color: #4a90e2;
+
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+
+/* Radio болон Checkbox */
+
+.options {
+    padding: 18px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.option-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+/* Badge */
+
+.badge-box {
+    position: relative;
+
+    margin: 30px 0;
+    padding: 20px;
+
+    background-color: #eef5ff;
+
+    border: 1px solid #cddfff;
+    border-radius: 10px;
+}
+
+.badge {
+    position: absolute;
+
+    top: -12px;
+    right: 15px;
+
+    padding: 5px 12px;
+
+    background-color: #4a90e2;
+    color: white;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* Buttons */
+
+.button-group {
+    display: flex;
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* Бүртгүүлэх товч */
+
+.submit-btn {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #357abd;
+}
+
+
+/* Цэвэрлэх товч */
+
+.reset-btn {
+    background-color: #e5e5e5;
+    color: #333;
+}
+
+.reset-btn:hover {
+    background-color: #d2d2d2;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 25px;
+
+    text-align: center;
+
+    color: #777;
+    font-size: 14px;
+}

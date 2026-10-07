@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Лаборатори 3 - Бүртгэлийн форм</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="title">Бүртгэлийн форм</h1>
+        <p class="subtitle">
+            Хувийн мэдээллээ бөглөнө үү.
+        </p>
+    </header>
+
+    <main class="main">
+
+        <form class="form">
+
+            <!-- Нэр -->
+            <div class="form-group">
+                <label class="form-label" for="name">
+                    Нэр
+                </label>
+
+                <input
+                    class="form-input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    pattern="[А-ЯӨҮЁа-яөүёA-Za-z ]+"
+                >
+            </div>
+
+            <!-- Имэйл -->
+            <div class="form-group">
+                <label class="form-label" for="email">
+                    Имэйл
+                </label>
+
+                <input
+                    class="form-input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+            </div>
+
+            <!-- Нууц үг -->
+            <div class="form-group">
+                <label class="form-label" for="password">
+                    Нууц үг
+                </label>
+
+                <input
+                    class="form-input"
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    pattern=".{8,}"
+                    title="Нууц үг хамгийн багадаа 8 тэмдэгт байна."
+                >
+            </div>
+
+            <!-- Төрсөн огноо -->
+            <div class="form-group">
+                <label class="form-label" for="birthdate">
+                    Төрсөн огноо
+                </label>
+
+                <input
+                    class="form-input"
+                    type="date"
+                    id="birthdate"
+                    name="birthdate"
+                    required
+                >
+            </div>
+
+            <!-- Хүйс -->
+            <fieldset class="form-group options">
+                <legend class="form-label">
+                    Хүйс
+                </legend>
+
+                <div class="option-group">
+
+                    <div class="option">
+                        <input
+                            type="radio"
+                            id="male"
+                            name="gender"
+                            value="male"
+                            required
+                        >
+                        <label for="male">
+                            Эрэгтэй
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input
+                            type="radio"
+                            id="female"
+                            name="gender"
+                            value="female"
+                        >
+                        <label for="female">
+                            Эмэгтэй
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input
+                            type="radio"
+                            id="other"
+                            name="gender"
+                            value="other"
+                        >
+                        <label for="other">
+                            Бусад
+                        </label>
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <!-- Сонирхол -->
+            <fieldset class="form-group options">
+                <legend class="form-label">
+                    Сонирхол
+                </legend>
+
+                <div class="option-group">
+
+                    <div class="option">
+                        <input
+                            type="checkbox"
+                            id="coding"
+                            name="interest"
+                            value="coding"
+                        >
+                        <label for="coding">
+                            Програмчлал
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input
+                            type="checkbox"
+                            id="music"
+                            name="interest"
+                            value="music"
+                        >
+                        <label for="music">
+                            Хөгжим
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <input
+                            type="checkbox"
+                            id="sport"
+                            name="interest"
+                            value="sport"
+                        >
+                        <label for="sport">
+                            Спорт
+                        </label>
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <!-- Мэргэжил -->
+            <div class="form-group">
+                <label class="form-label" for="profession">
+                    Мэргэжил
+                </label>
+
+                <select
+                    class="form-input"
+                    id="profession"
+                    name="profession"
+                    required
+                >
+                    <option value="">
+                        -- Сонгоно уу --
+                    </option>
+
+                    <option value="programmer">
+                        Программист
+                    </option>
+
+                    <option value="designer">
+                        Дизайнер
+                    </option>
+
+                    <option value="teacher">
+                        Багш
+                    </option>
+
+                    <option value="other">
+                        Бусад
+                    </option>
+                </select>
+            </div>
+
+            <!-- Position relative / absolute -->
+            <div class="badge-box">
+                <span class="badge">
+                    LAB 3
+                </span>
+
+                <p>
+                    CSS-ээр загварчилсан бүртгэлийн форм
+                </p>
+            </div>
+
+            <!-- Товчнууд -->
+            <div class="button-group">
+
+                <button
+                    class="btn submit-btn"
+                    type="submit"
+                >
+                    Бүртгүүлэх
+                </button>
+
+                <button
+                    class="btn reset-btn"
+                    type="reset"
+                >
+                    Цэвэрлэх
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <p>
+            © 2026 Web Development - Laboratory 3
+        </p>
+    </footer>
+
+</body>
+
+</html>
